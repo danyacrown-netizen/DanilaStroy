@@ -247,3 +247,64 @@ body.services-page .service-catalog-card strong{position:relative}
 .pin-wall{left:8px;top:106px}.pin-roof{left:185px;top:18px}.pin-window{left:49px;top:73px}
 .material-line{position:absolute;z-index:4;color:#fff;text-shadow:0 2px 9px #292019;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;transform:translateZ(150px)}.material-line i{display:block;height:1px;width:105px;background:var(--bronze-light);margin-bottom:8px}.material-line span{display:block;color:var(--bronze-light);font-size:10px;text-transform:uppercase;letter-spacing:.14em}.material-line b{display:block;margin-top:3px;font:18px/1.05 Georgia,serif;font-weight:400}.line-wall{left:8%;top:43%}.line-wall i{transform:rotate(-12deg);transform-origin:left}.line-roof{right:8%;top:19%}.line-roof i{transform:rotate(25deg);transform-origin:right;margin-left:auto}.line-roof span,.line-roof b{text-align:right}.line-window{left:5%;top:59%}.line-window i{transform:rotate(8deg);transform-origin:left}.house-stage[data-active="wall"] .line-wall,.house-stage[data-active="roof"] .line-roof,.house-stage[data-active="window"] .line-window{opacity:1;transform:translateZ(150px) translateY(-8px)}
 .scene-caption{z-index:7}
+
+@media(max-width:560px){
+  .site-header{height:74px;padding:0 16px}
+  .logo{font-size:13px}
+  .logo span{width:30px;height:30px}
+  .menu-button{width:38px;padding:5px 0}
+  .site-nav{top:73px;left:10px;right:10px;padding:16px;gap:0;font-size:11px}
+  .site-nav a{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .site-nav .nav-cta{margin-top:10px;text-align:center;border-bottom:1px solid rgba(255,255,255,.72)}
+  .hero{min-height:calc(100svh - 74px);padding:94px 20px 42px}
+  .hero>.hero-copy{padding:0}
+  .hero h1{font-size:clamp(45px,14vw,68px);margin:18px 0 22px}
+  .hero-text{font-size:14px;line-height:1.55}
+  .hero-actions{align-items:flex-start;flex-direction:column;gap:20px;margin:28px 0 38px}
+  .hero-meta{gap:20px;flex-wrap:wrap}
+  .hero-meta strong{font-size:22px}
+  .full-house{min-height:100%;height:100%}
+  .house-callout,.scene-caption{display:none}
+  .section{padding:78px 20px}
+  .section h2{font-size:clamp(38px,12vw,58px);margin-bottom:34px}
+  .intro-grid{grid-template-columns:1fr;gap:34px}
+  .lead{font-size:18px}
+  .section-heading{display:block}
+  .section-heading .text-link{display:inline-block;margin-bottom:22px}
+  .service-preview{grid-template-columns:1fr 1fr}
+  .service-tile{min-height:190px;padding:20px 14px}
+  .service-tile h3{font-size:21px}
+  .service-tile b{font-size:17px}
+  .cta-section{padding:90px 20px}
+  .cta-section h2{font-size:clamp(38px,12vw,58px)}
+  .site-footer{grid-template-columns:1fr;gap:30px;padding:48px 20px}
+  .footer-bottom{grid-column:auto;display:grid;gap:10px;margin-top:10px}
+  .page-hero{min-height:430px!important;padding:105px 20px 48px!important}
+  .page-hero h1{font-size:clamp(44px,13vw,68px)}
+  .page-hero>p:last-child{font-size:14px;line-height:1.55}
+  .service-catalog{grid-template-columns:1fr;padding:38px 16px 76px;gap:10px}
+  .service-catalog-card{min-height:175px;padding:20px 17px}
+  .service-catalog-card h2{font-size:24px}
+  .service-detail-hero{min-height:560px;padding:96px 20px 48px}
+  .service-detail-hero h1{font-size:clamp(44px,13vw,68px);overflow-wrap:anywhere}
+  .service-detail-lead{font-size:16px}
+  .service-detail-body{padding:72px 20px;grid-template-columns:1fr;gap:36px}
+  .service-detail-body h2{font-size:clamp(40px,12vw,58px)}
+  .service-detail-body>div:last-child{font-size:15px}
+  .project-intro{padding:100px 20px 52px}
+  .project-intro h1{font-size:clamp(44px,13vw,68px);overflow-wrap:anywhere}
+  .project-gallery{padding:0 16px 65px;grid-template-columns:1fr}
+  .project-photo:first-child,.project-photo:first-child img{min-height:300px}
+  .project-photo,.project-photo img{min-height:230px}
+  .team-grid{grid-template-columns:1fr;padding:40px 16px 76px}
+  .team-photo{height:260px}
+  .team-grid h2{font-size:28px}
+  .price-list{padding:0 20px 76px}
+  .price-list article{grid-template-columns:1fr;gap:10px;padding:26px 0}
+  .price-list strong{grid-column:auto}
+  .calc-layout,.contact-layout{padding:72px 20px}
+  .calc-card,.contact-form{padding:20px}
+  .calc-card h2,.contact-layout h2{font-size:clamp(38px,12vw,58px)}
+  .values{grid-template-columns:1fr}
+  img{max-width:100%;height:auto}
+}
